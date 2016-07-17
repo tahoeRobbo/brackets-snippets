@@ -219,8 +219,8 @@
         "trigger": "fac",
         "description": "Angular Factory in JP Style",
         "scope": "javascript",
-        "text": "// ${2:FactoryName}.js\n(function(){\n    'use strict';\n    \n    angular\n        .module('${1:AppName}')\n        .factory('${2:FactoryName}', ${2:FactoryName});\n        \n    ${2:FactoryName}.$inject = [${3:DEPENDENCIES}];\n    \n    function ${2:FactoryName}(${3:DEPENDENCIES}) {\n        \n    }\n})();\n",
-        "mTime": 1468797407181
+        "text": "// ${2:FactoryName}.js\n\n(function(){\n    'use strict';\n\n    angular\n        .module('${1:AppName}')\n        .factory('${2:FactoryName}', ${2:FactoryName});\n        \n    ${2:FactoryName}.$inject = [${3:DEPENDENCIES}];\n\n    function ${2:FactoryName}(${3:DEPENDENCIES}) {\n        \n    }\n})();\n",
+        "mTime": 1468798512804
     },
     {
         "trigger": "fl",
@@ -254,7 +254,7 @@
         "trigger": "ctrl",
         "description": "Angular Controller in JP Style",
         "scope": "javascript",
-        "text": "// ${2:ControllerName}.js\n(function(){\n    'use strict';\n    \n    angular\n        .module('${1:AppName}')\n        .factory('${2:ControllerName}', ${2:ControllerName});\n        \n    ${2:ControllerName}.$inject = [${3:DEPENDENCIES}];\n    \n    function ${2:ControllerName}(${3:DEPENDENCIES}) {\n        var vm = this;\n        \n        \n    }\n})();\n",
-        "mTime": 1468797759480
+        "text": "// ${2:ControllerName}.js\n\n(function(){\n    'use strict';\n\n    angular\n        .module('${1:AppName}')\n        .factory('${2:ControllerName}', ${2:ControllerName});\n        \n    ${2:ControllerName}.$inject = [${3:DEPENDENCIES}];\n\n    function ${2:ControllerName}(${3:DEPENDENCIES}) {\n        var vm = this;\n\n        \n    }\n})();\n",
+        "mTime": 1468798479197
     }
 ]
