@@ -219,7 +219,7 @@
         {
             "trigger": "fac",
             "description": "Angular Factory in JP Style",
-            "tag": 'AngularJS',
+            "tag": "AngularJS",
             "scope": "javascript",
             "text": "// ${2:FactoryName}.js\n(function(){\n    angular.module('${1:AppName}')\n        .factory('${2:FactoryName}', ${2:FactoryName});\n        \n    ${2:FactoryName}.$inject = [${3:DEPENDENCIES}];\n    \n    function ${2:FactoryName}(${3:DEPENDENCIES}) {\n        \n    }\n})();\n",
             "mTime": 1468779436828
