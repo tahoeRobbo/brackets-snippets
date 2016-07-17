@@ -187,8 +187,9 @@
         "description": "switch statement",
         "tag": "VanillaJS",
         "tagHide": true,
-        "text": "switch(${1:expression}) {\n  case ${2:value}:\n    ${3}\n    break;\n  default:\n    break;\n}",
-        "source": "system"
+        "text": "switch(${1:expression}) {\n    case ${2:value}: {\n        ${3}\n        break;\n    }\n    default: {\n        break;\n    }\n}",
+        "source": "system",
+        "mTime": 1468799655072
     },
     {
         "trigger": "si",
@@ -256,5 +257,26 @@
         "scope": "javascript",
         "text": "// ${2:ControllerName}.js\n\n(function(){\n    'use strict';\n\n    angular\n        .module('${1:AppName}')\n        .factory('${2:ControllerName}', ${2:ControllerName});\n        \n    ${2:ControllerName}.$inject = [${3:DEPENDENCIES}];\n\n    function ${2:ControllerName}(${3:DEPENDENCIES}) {\n        var vm = this;\n\n        \n    }\n})();\n",
         "mTime": 1468798479197
+    },
+    {
+        "trigger": "if",
+        "description": "if block",
+        "scope": "javascript",
+        "text": "if (${1:condition}) {\n    ${2}\n}",
+        "mTime": 1468798672316
+    },
+    {
+        "trigger": "else",
+        "description": "else block",
+        "scope": "javascript",
+        "text": "else {\n    ${1}\n}",
+        "mTime": 1468798750967
+    },
+    {
+        "trigger": "case",
+        "description": "case block",
+        "scope": "javascript",
+        "text": "case ${1:value}: {\n    ${2}\n    break;\n}",
+        "mTime": 1468799644689
     }
 ]
