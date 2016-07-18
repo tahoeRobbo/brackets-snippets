@@ -1,0 +1,122 @@
+- trigger: iife
+  description: Iffe wrapper
+  scope: javascript
+  mTime: 1468778290839
+  text: |
+        (function(){
+            ${1}
+        })();
+
+- trigger: fac
+  description: Angular Factory in JP Style
+  scope: javascript
+  mTime: 1468798512804
+  text: |
+        // ${2:FactoryName}.js
+        
+        (function(){
+            'use strict';
+        
+            angular
+                .module('${1:AppName}')
+                .factory('${2:FactoryName}', ${2:FactoryName});
+                
+            ${2:FactoryName}.$inject = [${3:DEPENDENCIES}];
+        
+            function ${2:FactoryName}(${3:DEPENDENCIES}) {
+                
+            }
+        })();
+        
+
+- trigger: fl
+  description: For loop based on array length
+  scope: javascript
+  mTime: 1468795816905
+  text: |
+        for (var ${1:i} = 0, len = ${2:array}.length; ${1:i} < len; ${1:i}++) {
+            ${3}
+        }
+
+- trigger: lfn
+  description: Let Arrow Function
+  scope: javascript
+  mTime: 1468797119195
+  text: |
+        let ${1:fnName} = (${2:args}) => ${3};
+
+- trigger: fll
+  description: for loop using let
+  scope: javascript
+  mTime: 1468797173804
+  text: |
+        for (let ${1:i} = 0, len = ${2:array}.length; ${1:i} < len; ${1:i}++) {
+            ${3}
+        }
+
+- trigger: cfn
+  description: const arrow function
+  scope: javascript
+  mTime: 1468797242741
+  text: |
+        const ${1:fnName} = (${2:args}) => ${3};
+
+- trigger: ctrl
+  description: Angular Controller in JP Style
+  scope: javascript
+  mTime: 1468798479197
+  text: |
+        // ${2:ControllerName}.js
+        
+        (function(){
+            'use strict';
+        
+            angular
+                .module('${1:AppName}')
+                .factory('${2:ControllerName}', ${2:ControllerName});
+                
+            ${2:ControllerName}.$inject = [${3:DEPENDENCIES}];
+        
+            function ${2:ControllerName}(${3:DEPENDENCIES}) {
+                var vm = this;
+        
+                
+            }
+        })();
+        
+
+- trigger: if
+  description: if block
+  scope: javascript
+  mTime: 1468798672316
+  text: |
+        if (${1:condition}) {
+            ${2}
+        }
+
+- trigger: else
+  description: else block
+  scope: javascript
+  mTime: 1468798750967
+  text: |
+        else {
+            ${1}
+        }
+
+- trigger: case
+  description: case block
+  scope: javascript
+  mTime: 1468799644689
+  text: |
+        case ${1:value}: {
+            ${2}
+            break;
+        }
+
+- scope: javascript
+  trigger: tern
+  description: ternary operator
+  mTime: 1468800484263
+  text: |
+        (${1:evaulation}) ? ${2:true} : ${3:false};
+
